@@ -464,6 +464,119 @@ a:hover {
     font-weight: 500;
 }
 
+/* === Scanner Section === */
+.scanner-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--bg) 0%, #1a1028 50%, var(--bg) 100%);
+}
+
+.scanner-card {
+    background: var(--bg-card);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.scanner-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(233, 69, 96, 0.05) 0%, transparent 50%);
+}
+
+.scanner-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.scanner-card h2 {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.scanner-card > p {
+    position: relative;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.scanner-benefits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 36px;
+    text-align: right;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit {
+    font-size: 1.05rem;
+    color: var(--text);
+}
+
+.btn-large {
+    padding: 18px 48px;
+    font-size: 1.15rem;
+    position: relative;
+}
+
+.scanner-note {
+    position: relative;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 16px;
+}
+
+/* === Floating CTA === */
+.floating-cta {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    background: var(--accent);
+    color: white !important;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+    z-index: 99;
+    transition: all var(--transition);
+    text-decoration: none;
+    font-family: var(--font);
+}
+
+.floating-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(233, 69, 96, 0.5);
+    background: var(--accent-light);
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .scanner-card {
+        padding: 40px 24px;
+    }
+    
+    .floating-cta {
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        text-align: center;
+    }
+}
+
 /* === Empty State === */
 .empty-state {
     text-align: center;
