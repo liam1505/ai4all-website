@@ -315,6 +315,115 @@ a:hover {
     color: var(--text-light);
 }
 
+.post-page .post-body h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-page .post-body h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.post-page .post-body blockquote {
+    border-right: 4px solid var(--accent);
+    border-left: none;
+    padding: 16px 24px;
+    margin: 28px 0;
+    background: rgba(233, 69, 96, 0.08);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text);
+}
+
+.post-page .post-body blockquote p {
+    margin-bottom: 8px;
+}
+
+.post-page .post-body blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.post-page .post-body hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+}
+
+.post-page .post-body ul,
+.post-page .post-body ol {
+    padding-right: 24px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.post-page .post-body li {
+    margin-bottom: 10px;
+    line-height: 1.9;
+}
+
+.post-page .post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 1rem;
+}
+
+.post-page .post-body th {
+    background: var(--accent);
+    color: white;
+    padding: 12px 16px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.post-page .post-body td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-page .post-body tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.post-page .post-body .highlight-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin: 28px 0;
+}
+
+.post-page .post-body .source-link {
+    color: var(--accent-light);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-light);
+    transition: var(--transition);
+}
+
+.post-page .post-body .source-link:hover {
+    color: var(--accent);
+}
+
+.post-page .post-body .author-note {
+    background: var(--bg-section);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-top: 48px;
+    border: 1px solid var(--border);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
 .back-link {
     display: inline-block;
     margin-top: 48px;

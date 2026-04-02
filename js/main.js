@@ -104,11 +104,16 @@ function renderPost() {
         .map(tag => TAGS[tag] ? `<span class="post-tag">${TAGS[tag].icon} ${TAGS[tag].label}</span>` : '')
         .join('');
 
-    // Convert line breaks to paragraphs
-    const bodyHtml = post.body
-        .split('\n\n')
-        .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
-        .join('');
+    // Convert body to HTML — if body contains HTML tags, use as-is; otherwise convert line breaks
+    let bodyHtml;
+    if (post.bodyHtml) {
+        bodyHtml = post.bodyHtml;
+    } else {
+        bodyHtml = post.body
+            .split('\n\n')
+            .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
+            .join('');
+    }
 
     container.innerHTML = `
         <div class="post-header">
